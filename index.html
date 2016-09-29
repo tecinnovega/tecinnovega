@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>ejemplo CSS JavaScript</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		
+		<style type="text/css">
+
+		
+ p {
+  font: oblique bold 120% cursive;
+}
+   .myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+       </style>
+
+		<script type="text/JavaScript">
+			function mostrar1(){ 
+		document.getElementById("container2").style.display="block";
+		document.getElementById("container1").style.visibility="hidden";
+		}
+			function mostrar2(){
+				document.getElementById("container2").style.display="none";
+		document.getElementById("container1").style.visibility="visible";
+
+		}
+		</script>
+	</head>
+	<body>
+	
+		<div id="header"></div>
+		<div id="container2" class="conteiner2" style="display:none;">
+		<center>
+			<br>
+			<br>
+			<p>Correo: <input type="text" name="correo"/></p>
+			<br>
+     		<p>Contrasena: <input type="password" name="contrasena">
+     		 <br>
+     		 <br>
+			<span onclick="mostrar2()"> <br> <input class="myButton" type="submit" value="Iniciar sesion" /> </span>
+		</div>
+		<div id = "container1" class="container1"> 
+			<span onclick="mostrar1()"><center> <br><br><br><br><br><br><br><br> <input class="myButton" type="submit" value="Entrar"/></center> </span>
+		
+	</font>	
+	</body>
+	</html>
